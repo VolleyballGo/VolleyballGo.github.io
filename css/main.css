@@ -41,3 +41,43 @@ footer {
     background: #333;
     color: #fff;
 }
+
+/* Game Showcase Styles */
+.game-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.game-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 280px;
+}
+
+.game-item h3 {
+    color: #007bff;
+    margin-bottom: 0.5rem;
+}
+
+.game-item p {
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.game-link {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.game-link:hover {
+    background: #0056b3;
+}

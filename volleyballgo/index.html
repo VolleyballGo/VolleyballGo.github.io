@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>關於 VolleyballGo</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="volleyballgo.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="back-link">← <span data-lang-en="Back to Home" data-lang-zh="返回主页" data-lang-tw="返回主頁">返回主頁</span></a>
+            <div class="language-selector">
+                <button class="lang-btn active" onclick="setLanguage('tw')">繁</button>
+                <button class="lang-btn" onclick="setLanguage('zh')">简</button>
+                <button class="lang-btn" onclick="setLanguage('en')">EN</button>
+            </div>
+        </nav>
+        <div class="hero-section">
+            <div class="app-icon-container">
+                <img src="images/app-icon.png" alt="VolleyballGo App Icon" class="app-icon" />
+            </div>
+            <h1 data-lang-en="About VolleyballGo" data-lang-zh="关于 VolleyballGo" data-lang-tw="關於 VolleyballGo">關於 VolleyballGo</h1>
+            <p class="promo-text" data-lang-en="VolleyballGo is designed specifically for volleyball enthusiasts in Hong Kong! Find nearby volleyball courts, check detailed venue information, monitor gym rental availability, and complete check-ins and game missions." data-lang-zh="VolleyballGo 专为香港排球爱好者而设！帮你找到附近的排球场，查看球场的详细资料，检查体育馆租用情况，完成签到及游戏任务。" data-lang-tw="VolleyballGo 專為香港排球愛好者而設！幫你搵到附近嘅排球場，睇到球場嘅詳細資料，檢查體育館租用情況，完成簽到及遊戲任務。">VolleyballGo 專為香港排球愛好者而設！幫你搵到附近嘅排球場，睇到球場嘅詳細資料，檢查體育館租用情況，完成簽到及遊戲任務。</p>
+            <div class="availability-notice">
+                <p data-lang-en="🇭🇰 Exclusively available in Hong Kong" data-lang-zh="🇭🇰 仅限香港地区使用" data-lang-tw="🇭🇰 僅限香港地區使用">🇭🇰 僅限香港地區使用</p>
+            </div>
+            <div class="download-buttons">
+                <a href="https://apps.apple.com/hk/app/volleyballgo/id6745510424" class="app-store-button">
+                    <img src="images/app-store-badge.svg" alt="Download on the App Store" />
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="screenshots">
+            <h2 data-lang-en="App Screenshots" data-lang-zh="应用截图" data-lang-tw="應用截圖">應用截圖</h2>
+            <div class="screenshot-gallery-container">
+                <div class="screenshot-gallery">
+                    <img src="images/screenshot1.png" alt="VolleyballGo Screenshot 1" class="screenshot active" />
+                    <img src="images/screenshot2.png" alt="VolleyballGo Screenshot 2" class="screenshot" />
+                    <img src="images/screenshot3.png" alt="VolleyballGo Screenshot 3" class="screenshot" />
+                    <img src="images/screenshot4.png" alt="VolleyballGo Screenshot 4" class="screenshot" />
+                </div>
+                <div class="gallery-nav">
+                    <button class="nav-btn prev-btn" onclick="changeScreenshot(-1)">‹</button>
+                    <button class="nav-btn next-btn" onclick="changeScreenshot(1)">›</button>
+                </div>
+                <div class="gallery-indicators">
+                    <span class="indicator active" onclick="currentScreenshot(1)"></span>
+                    <span class="indicator" onclick="currentScreenshot(2)"></span>
+                    <span class="indicator" onclick="currentScreenshot(3)"></span>
+                    <span class="indicator" onclick="currentScreenshot(4)"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2 data-lang-en="Key Features" data-lang-zh="功能特色" data-lang-tw="功能特色">功能特色</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3 data-lang-en="🏐 Find Nearby Courts" data-lang-zh="🏐 搵附近排球场" data-lang-tw="🏐 幫你搵到附近嘅排球場">🏐 幫你搵到附近嘅排球場</h3>
+                    <p data-lang-en="Quickly find volleyball courts near you, including sports centers, street courts, and beach volleyball courts. Enjoy volleyball with ease!" data-lang-zh="快速找到你附近的排球场，包括体育馆、街场和沙滩排球场，轻松享受排球乐趣。" data-lang-tw="快速搵到你附近嘅排球場，包括體育館、街場同沙灘排球場，輕鬆享受排球樂趣。">快速搵到你附近嘅排球場，包括體育館、街場同沙灘排球場，輕鬆享受排球樂趣。</p>
+                </div>
+                <div class="feature">
+                    <h3 data-lang-en="🏐 Detailed Venue Info" data-lang-zh="🏐 睇到球场详细资料" data-lang-tw="🏐 睇到球場嘅詳細資料">🏐 睇到球場嘅詳細資料</h3>
+                    <p data-lang-en="Access comprehensive information about each volleyball court including facilities, opening hours, and contact details." data-lang-zh="获取每个排球场的综合信息，包括设施、开放时间和联系方式。" data-lang-tw="獲取每個排球場嘅綜合信息，包括設施、開放時間同聯繫方式。">獲取每個排球場嘅綜合信息，包括設施、開放時間同聯繫方式。</p>
+                </div>
+                <div class="feature">
+                    <h3 data-lang-en="🏐 Check Gym Availability" data-lang-zh="🏐 检查体育馆租用情况" data-lang-tw="🏐 檢查體育館租用情況">🏐 檢查體育館租用情況</h3>
+                    <p data-lang-en="Instantly check the rental status of major sports centers, making it easier for you to book a court." data-lang-zh="即时查看各大体育馆的租用情况，帮你更轻松地预订场地。" data-lang-tw="即時查看各大體育館嘅租用情況，幫你更輕鬆咁book到場。">即時查看各大體育館嘅租用情況，幫你更輕鬆咁book到場。</p>
+                </div>
+                <div class="feature">
+                    <h3 data-lang-en="✅ Check-ins & Missions" data-lang-zh="✅ 完成签到及游戏任务" data-lang-tw="✅ 完成簽到及遊戲任務">✅ 完成簽到及遊戲任務</h3>
+                    <p data-lang-en="Train your volleyball dog through games and missions!" data-lang-zh="通过游戏和任务，训练你的排球狗狗啦！" data-lang-tw="通過遊戲同埋任務，訓練你嘅排球狗狗啦！">通過遊戲同埋任務，訓練你嘅排球狗狗啦！</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h2 data-lang-en="Why Use VolleyballGo?" data-lang-zh="点解要用 VolleyballGo？" data-lang-tw="點解要用 VolleyballGo？">點解要用 VolleyballGo？</h2>
+            <p data-lang-en="VolleyballGo is specifically designed for Hong Kong's volleyball community. We provide the most comprehensive and up-to-date information about volleyball facilities across Hong Kong, helping players connect with courts and complete exciting missions while exploring the city's volleyball scene." data-lang-zh="VolleyballGo 专为香港排球社区而设计。我们提供香港最全面和最新的排球设施信息，帮助球员连接球场并完成激动人心的任务，同时探索这座城市的排球场景。" data-lang-tw="VolleyballGo 專為香港排球社區而設計。我哋提供香港最全面同最新嘅排球設施信息，幫助球員連接球場並完成刺激嘅任務，同時探索呢座城市嘅排球場景。">VolleyballGo 專為香港排球社區而設計。我哋提供香港最全面同最新嘅排球設施信息，幫助球員連接球場並完成刺激嘅任務，同時探索呢座城市嘅排球場景。</p>
+        </section>
+
+        <section class="cta-section">
+            <h2 data-lang-en="Download VolleyballGo Now" data-lang-zh="立即下载 VolleyballGo" data-lang-tw="立即下載 VolleyballGo">立即下載 VolleyballGo</h2>
+            <p data-lang-en="Start your volleyball journey!" data-lang-zh="展开你的排球旅程！" data-lang-tw="展開你嘅排球旅程！">展開你嘅排球旅程！</p>
+            <div class="download-buttons">
+                <a href="https://apps.apple.com/hk/app/volleyballgo/id6745510424" class="app-store-button">
+                    <img src="images/app-store-badge.svg" alt="Download on the App Store" />
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p data-lang-en="&copy; 2025 VolleyballGo. All rights reserved." data-lang-zh="&copy; 2025 VolleyballGo。保留所有权利。" data-lang-tw="&copy; 2025 VolleyballGo. All rights reserved.">&copy; 2025 VolleyballGo. All rights reserved.</p>
+        <p><a href="../index.html" data-lang-en="Back to Home" data-lang-zh="返回主页" data-lang-tw="返回主頁">返回主頁</a></p>
+    </footer>
+
+    <script>
+        let currentScreenshotIndex = 0;
+        const screenshots = document.querySelectorAll('.screenshot');
+        const indicators = document.querySelectorAll('.indicator');
+        
+        // Screenshot gallery functionality
+        function showScreenshot(index) {
+            // Remove active class from all screenshots and indicators
+            screenshots.forEach(img => img.classList.remove('active'));
+            indicators.forEach(indicator => indicator.classList.remove('active'));
+            
+            // Add active class to current screenshot and indicator
+            if (screenshots[index] && indicators[index]) {
+                screenshots[index].classList.add('active');
+                indicators[index].classList.add('active');
+            }
+            
+            // Scroll to the current screenshot on mobile
+            if (window.innerWidth <= 768 && screenshots[index]) {
+                const gallery = document.querySelector('.screenshot-gallery');
+                const screenshotWidth = screenshots[index].offsetWidth + 16; // Include gap
+                gallery.scrollTo({
+                    left: screenshotWidth * index,
+                    behavior: 'smooth'
+                });
+            }
+        }
+        
+        function changeScreenshot(direction) {
+            currentScreenshotIndex += direction;
+            
+            // Loop around if we go past the bounds
+            if (currentScreenshotIndex >= screenshots.length) {
+                currentScreenshotIndex = 0;
+            } else if (currentScreenshotIndex < 0) {
+                currentScreenshotIndex = screenshots.length - 1;
+            }
+            
+            showScreenshot(currentScreenshotIndex);
+        }
+        
+        function currentScreenshot(index) {
+            currentScreenshotIndex = index - 1; // Convert to 0-based index
+            showScreenshot(currentScreenshotIndex);
+        }
+        
+        // Language switching functionality
+        function setLanguage(lang) {
+            // Update active language button
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelector(`[onclick="setLanguage('${lang}')"]`).classList.add('active');
+            
+            // Update all text content based on selected language
+            const elements = document.querySelectorAll('[data-lang-en]');
+            elements.forEach(element => {
+                const key = `data-lang-${lang}`;
+                if (element.hasAttribute(key)) {
+                    element.textContent = element.getAttribute(key);
+                }
+            });
+            
+            // Save language preference
+            localStorage.setItem('preferredLanguage', lang);
+            
+            // Update document language attribute
+            document.documentElement.lang = lang === 'en' ? 'en' : (lang === 'zh' ? 'zh-CN' : 'zh-TW');
+        }
+        
+        // Load saved language preference or default to Traditional Chinese
+        function loadLanguagePreference() {
+            const savedLang = localStorage.getItem('preferredLanguage') || 'tw';
+            setLanguage(savedLang);
+        }
+        
+        // Initialize language on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            loadLanguagePreference();
+        });
+        
+        // Auto-advance screenshots every 5 seconds on mobile
+        if (window.innerWidth <= 768 && screenshots.length > 0) {
+            setInterval(() => {
+                changeScreenshot(1);
+            }, 5000);
+        }
+        
+        // Handle swipe gestures on mobile
+        let touchStartX = 0;
+        let touchEndX = 0;
+        
+        const gallery = document.querySelector('.screenshot-gallery');
+        
+        if (gallery) {
+            gallery.addEventListener('touchstart', function(e) {
+                touchStartX = e.changedTouches[0].screenX;
+            });
+            
+            gallery.addEventListener('touchend', function(e) {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+            });
+        }
+        
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            const diff = touchStartX - touchEndX;
+            
+            if (Math.abs(diff) > swipeThreshold) {
+                if (diff > 0) {
+                    // Swiped left - next screenshot
+                    changeScreenshot(1);
+                } else {
+                    // Swiped right - previous screenshot
+                    changeScreenshot(-1);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

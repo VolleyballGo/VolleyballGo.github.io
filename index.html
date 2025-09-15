@@ -1,40 +1,148 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>關於 VolleyballGo</title>
+    <title data-lang-en="Game Gallery - Mobile Games Collection" data-lang-zh="游戏库 - 手机游戏合集" data-lang-tw="遊戲庫 - 手機遊戲合集">Game Gallery - Mobile Games Collection</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/gallery.css">
 </head>
 <body>
-    <header>
-        <h1>關於 VolleyballGo</h1>
-    </header>
+    <div class="simple-header">
+        <div class="language-selector">
+            <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
+            <button class="lang-btn" onclick="setLanguage('zh')">简</button>
+            <button class="lang-btn" onclick="setLanguage('tw')">繁</button>
+        </div>
+    </div>
+
     <main>
-        <section>
-            <p>VolleyballGo 係一個專為排球愛好者而設嘅應用程式！無論你係想搵附近嘅排球場、記錄你去過嘅體育館同街場，定係解鎖得意嘅徽章，VolleyballGo 都可以幫到你！</p>
+        <section class="games-gallery">
+            <h2 data-lang-en="Featured Games" data-lang-zh="精选游戏" data-lang-tw="精選遊戲">Featured Games</h2>
+            <div class="games-grid">
+                <!-- VolleyballGo Game -->
+                <div class="game-card">
+                    <div class="game-icon-container">
+                        <img src="volleyballgo/images/app-icon.png" alt="VolleyballGo" class="game-icon" />
+                    </div>
+                    <div class="game-info">
+                        <h3 data-lang-en="VolleyballGo" data-lang-zh="VolleyballGo" data-lang-tw="VolleyballGo">VolleyballGo</h3>
+                        <p class="game-category" data-lang-en="Sports & Social" data-lang-zh="体育与社交" data-lang-tw="體育與社交">Sports & Social</p>
+                        <p class="game-description" data-lang-en="Find volleyball courts in Hong Kong, check detailed venue information, monitor gym availability, and complete check-ins and missions." data-lang-zh="在香港寻找排球场，查看球场详细信息，监控场馆可用性，完成签到和任务。" data-lang-tw="在香港搵排球場，睇球場詳細信息，監控場館可用性，完成簽到同任務。">Find volleyball courts in Hong Kong, check detailed venue information, monitor gym availability, and complete check-ins and missions.</p>
+                        <div class="game-tags">
+                            <span class="tag" data-lang-en="Hong Kong" data-lang-zh="香港" data-lang-tw="香港">香港</span>
+                            <span class="tag" data-lang-en="Courts" data-lang-zh="球场" data-lang-tw="球場">球場</span>
+                            <span class="tag" data-lang-en="Check-in" data-lang-zh="签到" data-lang-tw="簽到">簽到</span>
+                        </div>
+                        <a href="volleyballgo/index.html" class="game-link">
+                            <span data-lang-en="Learn More" data-lang-zh="了解更多" data-lang-tw="了解更多">了解更多</span> →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- RocketDriver Game -->
+                <div class="game-card">
+                    <div class="game-icon-container">
+                        <img src="rocketdriver/images/app-icon.png" alt="RocketDriver" class="game-icon" />
+                    </div>
+                    <div class="game-info">
+                        <h3 data-lang-en="RocketDriver" data-lang-zh="火箭驾驶员" data-lang-tw="RocketDriver">RocketDriver</h3>
+                        <p class="game-category" data-lang-en="Action & Adventure" data-lang-zh="动作与冒险" data-lang-tw="動作與冒險">Action & Adventure</p>
+                        <p class="game-description" data-lang-en="Soar to the sky! Drive your rocket as high as you can while managing fuel and navigating challenging winds." data-lang-zh="翱翔天空！驾驶你的火箭飞得尽可能高，同时管理燃料和应对挑战性的风。" data-lang-tw="翱翔天空！駕駛你的火箭飛得儘可能高，同時管理燃料和應對挑戰性的風。">Soar to the sky! Drive your rocket as high as you can while managing fuel and navigating challenging winds.</p>
+                        <div class="game-tags">
+                            <span class="tag" data-lang-en="Arcade" data-lang-zh="街机" data-lang-tw="街機">Arcade</span>
+                            <span class="tag" data-lang-en="Space" data-lang-zh="太空" data-lang-tw="太空">Space</span>
+                            <span class="tag" data-lang-en="Endless" data-lang-zh="无尽" data-lang-tw="無盡">Endless</span>
+                        </div>
+                        <a href="rocketdriver/index.html" class="game-link">
+                            <span data-lang-en="Learn More" data-lang-zh="了解更多" data-lang-tw="了解更多">了解更多</span> →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Almost! Game -->
+                <div class="game-card">
+                    <div class="game-icon-container">
+                        <img src="almost/images/app-icon.png" alt="Almost!" class="game-icon" />
+                    </div>
+                    <div class="game-info">
+                        <h3 data-lang-en="Almost!" data-lang-zh="Almost!" data-lang-tw="Almost!">Almost!</h3>
+                        <p class="game-category" data-lang-en="Reaction & Timing" data-lang-zh="反应与时机" data-lang-tw="反應與時機">Reaction & Timing</p>
+                        <p class="game-description" data-lang-en="Collection of addictive mini-games that challenge your timing and reflexes." data-lang-zh="令人上瘾的小游戏合集，挑战你的时机和反应能力。" data-lang-tw="令人上癮的小遊戲合集，挑戰你的時機和反應能力。">Collection of addictive mini-games that challenge your timing and reflexes.</p>
+
+                        <div class="game-tags">
+                            <span class="tag" data-lang-en="Reflex" data-lang-zh="反应" data-lang-tw="反應">Reflex</span>
+                            <span class="tag" data-lang-en="Timing" data-lang-zh="时机" data-lang-tw="時機">Timing</span>
+                            <span class="tag" data-lang-en="Mini-Games" data-lang-zh="小游戏" data-lang-tw="迷你遊戲">Mini-Games</span>
+                        </div>
+                        <a href="almost/index.html" class="game-link">
+                            <span data-lang-en="Learn More" data-lang-zh="了解更多" data-lang-tw="了解更多">Learn More</span> →
+                        </a>
+                    </div>
+                </div>
         </section>
-        <section>
-            <h2>功能特色</h2>
-            <ul>
-                <li><strong>搵附近排球場：</strong>快速搵到你附近嘅排球場，包括體育館、街場同沙灘排球場。</li>
-                <li><strong>記錄排球旅程：</strong>記錄你去過嘅場地，打造屬於你嘅排球地圖。</li>
-                <li><strong>解鎖徽章：</strong>完成挑戰，解鎖得意嘅徽章，分享俾朋友睇！</li>
-                <li><strong>分享去社交平台：</strong>將你嘅排球旅程分享到 Instagram 或其他社交平台。</li>
-                <li><strong>個人化體驗：</strong>按地區或者場地類型篩選，搵到最啱你嘅場地。</li>
-            </ul>
-        </section>
-        <section>
-            <h2>點解要用 VolleyballGo？</h2>
-            <p>VolleyballGo 希望透過呢個平台，令更多人可以享受排球嘅樂趣，記錄屬於自己嘅排球旅程，仲可以同朋友分享你嘅成就！</p>
-        </section>
-        <section>
-            <h2>立即下載 VolleyballGo</h2>
-            <p>展開你嘅排球旅程！</p>
+
+        <section class="stats-section">
+            <h2 data-lang-en="Collection Stats" data-lang-zh="合集统计" data-lang-tw="合集統計">Collection Stats</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label" data-lang-en="Games Available" data-lang-zh="可用游戏" data-lang-tw="可用遊戲">Games Available</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label" data-lang-en="In Development" data-lang-zh="开发中" data-lang-tw="開發中">In Development</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label" data-lang-en="Genres" data-lang-zh="游戏类型" data-lang-tw="遊戲類型">Genres</div>
+                </div>
+            </div>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2025 VolleyballGo. All rights reserved.</p>
+        <p data-lang-en="&copy; 2025 VolleyballGo. All rights reserved." data-lang-zh="&copy; 2025 手机游戏合集。保留所有权利。" data-lang-tw="&copy; 2025 VolleyballGo。保留所有權利。">&copy; 2025 VolleyballGo. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Language switching functionality
+        function setLanguage(lang) {
+            // Update active language button
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelector(`[onclick="setLanguage('${lang}')"]`).classList.add('active');
+            
+            // Update all text content based on selected language
+            const elements = document.querySelectorAll('[data-lang-en]');
+            elements.forEach(element => {
+                const key = `data-lang-${lang}`;
+                if (element.hasAttribute(key)) {
+                    // Handle title tag separately
+                    if (element.tagName === 'TITLE') {
+                        document.title = element.getAttribute(key);
+                    } else {
+                        element.textContent = element.getAttribute(key);
+                    }
+                }
+            });
+            
+            // Save language preference
+            localStorage.setItem('preferredLanguage', lang);
+            
+            // Update document language attribute
+            document.documentElement.lang = lang === 'en' ? 'en' : (lang === 'zh' ? 'zh-CN' : 'zh-TW');
+        }
+        
+        // Load saved language preference or default to English
+        function loadLanguagePreference() {
+            const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+            setLanguage(savedLang);
+        }
+        
+        // Initialize language on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            loadLanguagePreference();
+        });
+    </script>
 </body>
 </html>

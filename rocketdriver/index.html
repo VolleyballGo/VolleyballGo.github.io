@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RocketDriver - Your Ultimate Space Adventure</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="rocketdriver.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="back-link">← <span data-lang-en="Back to Home" data-lang-zh="返回主页" data-lang-tw="返回主頁">Back to Games</span></a>
+            <div class="language-selector">
+                <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
+                <button class="lang-btn" onclick="setLanguage('zh')">简</button>
+                <button class="lang-btn" onclick="setLanguage('tw')">繁</button>
+            </div>
+        </nav>
+        <div class="hero-section">
+            <div class="app-icon-container">
+                <img src="images/app-icon.png" alt="RocketDriver App Icon" class="app-icon" />
+            </div>
+            <h1 data-lang-en="RocketDriver" data-lang-zh="火箭驾驶员" data-lang-tw="RocketDriver">RocketDriver</h1>
+            <p class="promo-text" data-lang-en="Soar to the sky in RocketDriver! Drive your rocket as high as you can, but watch out for fuel! Collect canisters to refuel and navigate through challenging winds." data-lang-zh="在火箭驾驶员中翱翔天空！驾驶你的火箭飞得尽可能高，但要注意燃料！收集燃料罐补充燃料，在充满挑战的风中导航。" data-lang-tw="在RocketDriver中翱翔天空！駕駛你的火箭飛得儘可能高，但要注意燃料！收集燃料罐補充燃料，在充滿挑戰的風中導航。">Soar to the sky in RocketDriver! Drive your rocket as high as you can, but watch out for fuel! Collect canisters to refuel and navigate through challenging winds.</p>
+            <div class="download-buttons">
+                <a href="#" class="app-store-button">
+                    <img src="images/app-store-badge.svg" alt="Download on the App Store" />
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="video-preview">
+            <h2 data-lang-en="Game Preview" data-lang-zh="游戏预览" data-lang-tw="遊戲預覽">Game Preview</h2>
+            <div class="video-container">
+                <video controls poster="images/video-thumbnail.png">
+                    <source src="videos/gameplay-preview.m4v" type="video/mp4">
+                    <span data-lang-en="Your browser does not support the video tag." data-lang-zh="您的浏览器不支持视频标签。" data-lang-tw="您的瀏覽器不支援影片標籤。">Your browser does not support the video tag.</span>
+                </video>
+            </div>
+        </section>
+
+        <section class="screenshots">
+            <h2 data-lang-en="Screenshots" data-lang-zh="游戏截图" data-lang-tw="遊戲截圖">Screenshots</h2>
+            <div class="screenshot-gallery-container">
+                <div class="screenshot-gallery">
+                    <img src="images/screenshot1.png" alt="RocketDriver Screenshot 1" class="screenshot active" />
+                    <img src="images/screenshot2.png" alt="RocketDriver Screenshot 2" class="screenshot" />
+                    <img src="images/screenshot3.png" alt="RocketDriver Screenshot 3" class="screenshot" />
+                    <img src="images/screenshot4.png" alt="RocketDriver Screenshot 4" class="screenshot" />
+                </div>
+                <div class="gallery-nav">
+                    <button class="nav-btn prev-btn" onclick="changeScreenshot(-1)">‹</button>
+                    <button class="nav-btn next-btn" onclick="changeScreenshot(1)">›</button>
+                </div>
+                <div class="gallery-indicators">
+                    <span class="indicator active" onclick="currentScreenshot(1)"></span>
+                    <span class="indicator" onclick="currentScreenshot(2)"></span>
+                    <span class="indicator" onclick="currentScreenshot(3)"></span>
+                    <span class="indicator" onclick="currentScreenshot(4)"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="game-description">
+            <h2 data-lang-en="About RocketDriver" data-lang-zh="关于火箭驾驶员" data-lang-tw="關於RocketDriver">About RocketDriver</h2>
+            <p data-lang-en="RocketDriver: Your Ultimate Space Adventure!" data-lang-zh="火箭驾驶员：您的终极太空冒险！" data-lang-tw="RocketDriver：您的終極太空冒險！">RocketDriver: Your Ultimate Space Adventure!</p>
+            <p data-lang-en="In RocketDriver, your mission is clear: drive your rocket to the highest heights possible! Experience the thrill of space exploration as you navigate through dynamic challenges and breathtaking environments." data-lang-zh="在火箭驾驶员中，您的使命很明确：将火箭驾驶到尽可能高的高度！体验太空探索的刺激，穿越动态挑战和令人惊叹的环境。" data-lang-tw="在RocketDriver中，您的使命很明確：將火箭駕駛到儘可能高的高度！體驗太空探索的刺激，穿越動態挑戰和令人驚嘆的環境。">In RocketDriver, your mission is clear: drive your rocket to the highest heights possible! Experience the thrill of space exploration as you navigate through dynamic challenges and breathtaking environments.</p>
+        </section>
+
+        <section class="features">
+            <h2 data-lang-en="Key Features" data-lang-zh="主要功能" data-lang-tw="主要功能">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3 data-lang-en="🎮 Intuitive Controls" data-lang-zh="🎮 简单控制" data-lang-tw="🎮 簡單控制">🎮 Intuitive Controls</h3>
+                    <p data-lang-en="Control your rocket by tapping on the left or right side of the screen to activate the corresponding engines. Master the timing to navigate through obstacles with precision!" data-lang-zh="通过点击屏幕左侧或右侧来控制火箭，激活相应的引擎。掌握时机，精确穿越障碍！" data-lang-tw="透過點擊螢幕左側或右側來控制火箭，啟動相應的引擎。掌握時機，精確穿越障礙！">Control your rocket by tapping on the left or right side of the screen to activate the corresponding engines. Master the timing to navigate through obstacles with precision!</p>
+                </div>
+                <div class="feature">
+                    <h3 data-lang-en="🚀 Aim for the Sky" data-lang-zh="🚀 直冲云霄" data-lang-tw="🚀 直衝雲霄">🚀 Aim for the Sky</h3>
+                    <p data-lang-en="Challenge yourself to reach new altitudes and set your high score!" data-lang-zh="挑战自己达到新的高度，创造你的最高分！" data-lang-tw="挑戰自己達到新的高度，創造你的最高分！">Challenge yourself to reach new altitudes and set your high score!</p>
+                </div>
+                <div class="feature">
+                    <h3 data-lang-en="⛽ Fuel Management" data-lang-zh="⛽ 燃料管理" data-lang-tw="⛽ 燃料管理">⛽ Fuel Management</h3>
+                    <p data-lang-en="Keep an eye on your fuel levels! Collect fuel canisters scattered throughout your journey to ensure you don't run out." data-lang-zh="注意您的燃料水平！收集散布在旅程中的燃料罐，确保不会耗尽。" data-lang-tw="注意您的燃料水平！收集散佈在旅程中的燃料罐，確保不會耗盡。">Keep an eye on your fuel levels! Collect fuel canisters scattered throughout your journey to ensure you don't run out.</p>
+                </div>
+                <div class="feature">
+                    <h3 data-lang-en="🌪️ Navigate Obstacles" data-lang-zh="🌪️ 导航障碍" data-lang-tw="🌪️ 導航障礙">🌪️ Navigate Obstacles</h3>
+                    <p data-lang-en="Face gusty winds and tricky hazards as you ascend, requiring skillful navigation and quick reflexes." data-lang-zh="在上升过程中面对狂风和棘手的危险，需要娴熟的导航技巧和快速反应。" data-lang-tw="在上升過程中面對狂風和棘手的危險，需要嫻熟的導航技巧和快速反應。">Face gusty winds and tricky hazards as you ascend, requiring skillful navigation and quick reflexes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2 data-lang-en="Ready for Launch?" data-lang-zh="准备发射？" data-lang-tw="準備發射？">Ready for Launch?</h2>
+            <p data-lang-en="Download RocketDriver now and start your space adventure!" data-lang-zh="立即下载火箭驾驶员，开始您的太空冒险！" data-lang-tw="立即下載RocketDriver，開始您的太空冒險！">Download RocketDriver now and start your space adventure!</p>
+            <div class="download-buttons">
+                <a href="#" class="app-store-button">
+                    <img src="images/app-store-badge.svg" alt="Download on the App Store" />
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p data-lang-en="&copy; 2025 RocketDriver. All rights reserved." data-lang-zh="&copy; 2025 RocketDriver。保留所有权利。" data-lang-tw="&copy; 2025 RocketDriver。保留所有權利。">&copy; 2025 RocketDriver. All rights reserved.</p>
+        <p><a href="../index.html" data-lang-en="Back to Home" data-lang-zh="返回主页" data-lang-tw="返回主頁">Back to Home</a></p>
+    </footer>
+
+    <script>
+        let currentScreenshotIndex = 0;
+        const screenshots = document.querySelectorAll('.screenshot');
+        const indicators = document.querySelectorAll('.indicator');
+        
+        // Language switching functionality
+        function setLanguage(lang) {
+            // Update active language button
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelector(`[onclick="setLanguage('${lang}')"]`).classList.add('active');
+            
+            // Update all text content based on selected language
+            const elements = document.querySelectorAll('[data-lang-en]');
+            elements.forEach(element => {
+                const key = `data-lang-${lang}`;
+                if (element.hasAttribute(key)) {
+                    element.textContent = element.getAttribute(key);
+                }
+            });
+            
+            // Save language preference
+            localStorage.setItem('preferredLanguage', lang);
+            
+            // Update document language attribute
+            document.documentElement.lang = lang === 'en' ? 'en' : (lang === 'zh' ? 'zh-CN' : 'zh-TW');
+        }
+        
+        // Load saved language preference or default to English
+        function loadLanguagePreference() {
+            const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+            setLanguage(savedLang);
+        }
+        
+        // Screenshot gallery functionality
+        function showScreenshot(index) {
+            // Remove active class from all screenshots and indicators
+            screenshots.forEach(img => img.classList.remove('active'));
+            indicators.forEach(indicator => indicator.classList.remove('active'));
+            
+            // Add active class to current screenshot and indicator
+            screenshots[index].classList.add('active');
+            indicators[index].classList.add('active');
+            
+            // Scroll to the current screenshot on mobile
+            if (window.innerWidth <= 768) {
+                const gallery = document.querySelector('.screenshot-gallery');
+                const screenshotWidth = screenshots[index].offsetWidth + 16; // Include gap
+                gallery.scrollTo({
+                    left: screenshotWidth * index,
+                    behavior: 'smooth'
+                });
+            }
+        }
+        
+        function changeScreenshot(direction) {
+            currentScreenshotIndex += direction;
+            
+            // Loop around if we go past the bounds
+            if (currentScreenshotIndex >= screenshots.length) {
+                currentScreenshotIndex = 0;
+            } else if (currentScreenshotIndex < 0) {
+                currentScreenshotIndex = screenshots.length - 1;
+            }
+            
+            showScreenshot(currentScreenshotIndex);
+        }
+        
+        function currentScreenshot(index) {
+            currentScreenshotIndex = index - 1; // Convert to 0-based index
+            showScreenshot(currentScreenshotIndex);
+        }
+        
+        // Initialize language on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            loadLanguagePreference();
+        });
+        
+        // Auto-advance screenshots every 5 seconds on mobile
+        if (window.innerWidth <= 768) {
+            setInterval(() => {
+                changeScreenshot(1);
+            }, 5000);
+        }
+        
+        // Handle swipe gestures on mobile
+        let touchStartX = 0;
+        let touchEndX = 0;
+        
+        const gallery = document.querySelector('.screenshot-gallery');
+        
+        gallery.addEventListener('touchstart', function(e) {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+        
+        gallery.addEventListener('touchend', function(e) {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        });
+        
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            const diff = touchStartX - touchEndX;
+            
+            if (Math.abs(diff) > swipeThreshold) {
+                if (diff > 0) {
+                    // Swiped left - next screenshot
+                    changeScreenshot(1);
+                } else {
+                    // Swiped right - previous screenshot
+                    changeScreenshot(-1);
+                }
+            }
+        }
+    </script>
+</body>
+</html>
